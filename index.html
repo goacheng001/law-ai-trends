@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>法律人AI工具热门文章</title>
+    <title>法律人AI工具热门内容</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&family=Noto+Serif+SC:wght@400;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -18,8 +18,8 @@
             --accent: #b85c38;
             --accent-light: #e8ddd4;
             --wechat: #07c160;
+            --bilibili: #00a1d6;
             --border: #e5e0d8;
-            --shadow: rgba(26, 24, 21, 0.06);
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -54,6 +54,19 @@
             padding: 0 20px 60px;
         }
 
+        .section-title {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1.3rem;
+            margin: 32px 0 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--accent);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title .icon { font-size: 1.5rem; }
+
         .update-info {
             text-align: center;
             font-size: 0.8rem;
@@ -66,89 +79,79 @@
         .article-card {
             background: var(--bg-card);
             border: 1px solid var(--border);
-            margin-bottom: 24px;
-            padding: 28px;
+            margin-bottom: 16px;
+            padding: 20px;
             border-radius: 4px;
+            transition: all 0.3s;
         }
 
-        .article-card:first-child {
-            border-color: var(--accent-light);
-            background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-accent) 100%);
+        .article-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
         }
-
-        .article-card:first-child::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 4px;
-            background: var(--accent);
-        }
-
-        .article-card { position: relative; }
 
         .article-tag {
             display: inline-block;
-            font-size: 0.7rem;
+            font-size: 0.65rem;
             font-weight: 600;
-            color: var(--wechat);
-            background: rgba(12, 193, 96, 0.1);
-            padding: 3px 10px;
+            padding: 2px 8px;
             border-radius: 2px;
-            margin-bottom: 12px;
+            margin-bottom: 8px;
         }
+
+        .article-tag.wechat { background: rgba(12, 193, 96, 0.1); color: var(--wechat); }
+        .article-tag.bilibili { background: rgba(0, 161, 214, 0.1); color: var(--bilibili); }
+        .article-tag.xiaohongshu { background: rgba(254, 44, 85, 0.1); color: #fe2c55; }
 
         .article-title {
             font-family: 'Noto Serif SC', serif;
-            font-size: 1.2rem;
+            font-size: 1.05rem;
             font-weight: 700;
-            margin-bottom: 12px;
+            margin-bottom: 8px;
             line-height: 1.4;
         }
 
         .article-source {
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             color: var(--text-muted);
-            margin-bottom: 16px;
+            margin-bottom: 10px;
         }
 
-        .article-content {
-            font-size: 0.95rem;
+        .article-desc {
+            font-size: 0.85rem;
             color: var(--text-secondary);
-            line-height: 1.9;
-            max-height: 280px;
+            line-height: 1.7;
+            max-height: 100px;
             overflow: hidden;
             position: relative;
         }
 
-        .article-content::after {
+        .article-desc::after {
             content: '';
             position: absolute;
             bottom: 0;
             left: 0;
             right: 0;
-            height: 60px;
+            height: 30px;
             background: linear-gradient(transparent, var(--bg-card));
         }
 
-        .article-card:first-child .article-content::after {
-            background: linear-gradient(transparent, var(--bg-accent));
-        }
-
         .read-more {
-            display: block;
-            text-align: center;
-            padding: 12px;
-            margin-top: 16px;
+            display: inline-block;
+            padding: 8px 16px;
+            margin-top: 12px;
             background: var(--wechat);
             color: white;
             text-decoration: none;
+            font-size: 0.8rem;
             font-weight: 500;
-            border-radius: 4px;
+            border-radius: 3px;
         }
 
         .read-more:hover { background: #06ad56; }
+
+        .bilibili .read-more { background: var(--bilibili); }
+        .bilibili .read-more:hover { background: #0091cd; }
 
         .footer {
             text-align: center;
@@ -161,83 +164,124 @@
 </head>
 <body>
     <header class="header">
-        <h1>法律人 <span>AI工具</span>热门文章</h1>
-        <p>法律人写给法律人的实操心得</p>
+        <h1>法律人 <span>AI工具</span>热门内容</h1>
+        <p>法律人写给法律人的实操心得 · 持续更新</p>
     </header>
 
     <div class="container">
-        <div class="update-info">更新时间：<span>2026年3月31日</span> · 来源：微信公众号</div>
+        <div class="update-info">更新时间：<span>2026年3月31日</span></div>
 
-        <!-- 文章1 -->
-        <article class="article-card">
-            <span class="article-tag">实操指南</span>
-            <h2 class="article-title">重磅！《法律龙虾🦞使用指南》（律师版）来了！</h2>
+        <!-- 微信公众号 -->
+        <h2 class="section-title"><span class="icon">📱</span> 微信公众号</h2>
+
+        <div class="article-card">
+            <span class="article-tag wechat">实操指南</span>
+            <h3 class="article-title">重磅！《法律龙虾🦞使用指南》（律师版）来了！</h3>
             <div class="article-source">来源：法律实验室</div>
-            <div class="article-content">
-                作为第一批春节前就开始折腾"龙虾"的法律人，作者分享了3周"饲养龙虾"的心得。
-
-核心内容：
-- 适合谁：已用或想用"龙虾"的法律人
-- 指南内容：基本使用方法 + 5大核心配置文件 + 法律案例
-- 真实感受：长期记住案件细节、持续理解工作偏好、晚上下令早上交货
-- 建议：从一个小需求做起，逐步建立信心
+            <div class="article-desc">
+                3周"饲养龙虾"的心得分享，从Coze一键部署到配置各种技能，驯化成专属智能法律助理。
             </div>
             <a href="https://mp.weixin.qq.com/s/2da1823AjUGlvZs_nig83g" target="_blank" class="read-more">阅读全文 →</a>
-        </article>
+        </div>
 
-        <!-- 文章2 -->
-        <article class="article-card">
-            <span class="article-tag">技术测评</span>
-            <h2 class="article-title">"李鬼"大战Anthropic官方Skill</h2>
+        <div class="article-card">
+            <span class="article-tag wechat">技术测评</span>
+            <h3 class="article-title">"李鬼"大战Anthropic官方Skill</h3>
             <div class="article-source">来源：元力兄弟</div>
-            <div class="article-content">
-                作者发现一个叫 claude-legal-skill 的插件，误以为是Anthropic官方出品，实际是第三方工具。
-
-核心内容：
-- 如何判断Skill是否"官方"：看GitHub组织名、认证标签、作者信息
-- 官方正版安装方法
-- 意外发现：李鬼skill审查效果居然还不错
+            <div class="article-desc">
+                如何判断Skill是否"官方"：看GitHub组织名、认证标签、作者信息。
             </div>
             <a href="https://mp.weixin.qq.com/s/DkP0YpOtEwp2cFRbjluQQw" target="_blank" class="read-more">阅读全文 →</a>
-        </article>
+        </div>
 
-        <!-- 文章3 -->
-        <article class="article-card">
-            <span class="article-tag">实战技巧</span>
-            <h2 class="article-title">两个Skill协作搞定案例整理——法律知识库AI三次升级</h2>
+        <div class="article-card">
+            <span class="article-tag wechat">实战技巧</span>
+            <h3 class="article-title">两个Skill协作搞定案例整理——法律知识库AI三次升级</h3>
             <div class="article-source">来源：法律实验室</div>
-            <div class="article-content">
-                作者分享了从Coze→Dify工作流→Claude Code命令→Skill的升级迭代过程。
-
-核心内容：
-- 三次迭代历程：Coze、Dify工作流版、Claude Code命令+脚本版、Skill自动编排
-- Skill时代的优势：安装简单，直接调用
-- 之前方法的门槛：复制粘贴、Docker、会写脚本
+            <div class="article-desc">
+                从Coze→Dify工作流→Claude Code命令→Skill的升级迭代过程。
             </div>
             <a href="https://mp.weixin.qq.com/s/V0aFlwzZmrJpj0Dkm6tKlg" target="_blank" class="read-more">阅读全文 →</a>
-        </article>
+        </div>
 
-        <!-- 文章4 -->
-        <article class="article-card">
-            <span class="article-tag">产品介绍</span>
-            <h2 class="article-title">更新！不懂AI Agent的律师不是好法务</h2>
+        <div class="article-card">
+            <span class="article-tag wechat">产品介绍</span>
+            <h3 class="article-title">更新！不懂AI Agent的律师不是好法务</h3>
             <div class="article-source">来源：元典律智助手</div>
-            <div class="article-content">
-                全网刷屏的"龙虾"OpenClaw点燃了法律圈对AI的热情。
-
-核心内容：
-- Ami 2.0 介绍：三栏式界面布局
-- 智能任务路由：你只管提问，剩下的交给AI
-- 场景化工作流：精准对应法律人工作流
+            <div class="article-desc">
+                全网刷屏的"龙虾"OpenClaw点燃法律圈AI热情，Ami 2.0介绍。
             </div>
             <a href="https://mp.weixin.qq.com/s/bFRtYx3ocX7cG8Lsxz-RJQ" target="_blank" class="read-more">阅读全文 →</a>
-        </article>
+        </div>
+
+        <div class="article-card">
+            <span class="article-tag wechat">风险分析</span>
+            <h3 class="article-title">火爆OpenClaw背后的重大风险及律师建议</h3>
+            <div class="article-source">来源：衡律天瑞</div>
+            <div class="article-desc">
+                工信部预警：OpenClaw信任边界模糊、权限控制不足，可能造成信息泄露、系统受控。
+            </div>
+            <a href="https://mp.weixin.qq.com/s?src=11&timestamp=1774932953&ver=6631&signature=Docf-gqZhMfJEBfeOb8*TgOXcjvplbmWS8LAxgYq7jQlg40igy*qK**VX3GDNR6hcFZcRf2mb-zIFYOhSYL0uy65d-VDwmZZfgLvAsFH-my5mnbBknU3uKst8DjL3-Ad&new=1" target="_blank" class="read-more">阅读全文 →</a>
+        </div>
+
+        <!-- B站 -->
+        <h2 class="section-title"><span class="icon">📺</span> B站视频</h2>
+
+        <div class="article-card bilibili">
+            <span class="article-tag bilibili">安装教程</span>
+            <h3 class="article-title">OpenClaw全网最细保姆级教学:安装→Skills实战→多Agent协作</h3>
+            <div class="article-source">时长：53:25</div>
+            <div class="article-desc">
+                1小时全精通！从安装到实操，包含传统ReAct局限分析、容错机制、多模型协同设计等。
+            </div>
+            <a href="https://www.bilibili.com/search?keyword=OpenClaw%20%E5%AE%89%E8%A3%85%20%E6%95%99%E7%A8%8B" target="_blank" class="read-more">搜索视频 →</a>
+        </div>
+
+        <div class="article-card bilibili">
+            <span class="article-tag bilibili">安装教程</span>
+            <h3 class="article-title">【2026B站最新版】小龙虾OpenClaw保姆级安装教程</h3>
+            <div class="article-source">小白10分钟搞定本地部署 + 接入飞书</div>
+            <div class="article-desc">
+                Windows系统全程干货无废话，存下吧很难找全的！
+            </div>
+            <a href="https://www.bilibili.com/search?keyword=OpenClaw%20%E5%AE%89%E8%A3%85" target="_blank" class="read-more">搜索视频 →</a>
+        </div>
+
+        <div class="article-card bilibili">
+            <span class="article-tag bilibili">安装教程</span>
+            <h3 class="article-title">Openclaw保姆级安装教程，一次通过不踩坑！</h3>
+            <div class="article-source">时长：19:08</div>
+            <div class="article-desc">
+                新手也能跟着做！
+            </div>
+            <a href="https://www.bilibili.com/search?keyword=OpenClaw%20%E5%AE%89%E8%A3%85" target="_blank" class="read-more">搜索视频 →</a>
+        </div>
+
+        <div class="article-card bilibili">
+            <span class="article-tag bilibili">Windows安装</span>
+            <h3 class="article-title">全网最详细:手把手教你安装 OpenClaw 小龙虾(Windows全流程)</h3>
+            <div class="article-source">图文版，一次成功不踩坑</div>
+            <div class="article-desc">
+                Windows安装比Mac坑多太多，这篇教程帮你一次成功。
+            </div>
+            <a href="https://www.bilibili.com/search?keyword=OpenClaw%20Windows" target="_blank" class="read-more">搜索视频 →</a>
+        </div>
+
+        <div class="article-card bilibili">
+            <span class="article-tag bilibili">新手必看</span>
+            <h3 class="article-title">Openclaw安装全流程，新手必看保姆级教程</h3>
+            <div class="article-source">时长：03:44</div>
+            <div class="article-desc">
+                快速上手指南。
+            </div>
+            <a href="https://www.bilibili.com/search?keyword=OpenClaw%20%E5%AE%89%E8%A3%85" target="_blank" class="read-more">搜索视频 →</a>
+        </div>
 
     </div>
 
     <footer class="footer">
-        <p>数据来源：微信公众号文章抓取</p>
-        <p style="margin-top:8px;opacity:0.6;">法律人AI工具热门内容榜 · 2026</p>
+        <p>法律人AI工具热门内容 · 持续更新中</p>
+        <p style="margin-top:8px;opacity:0.6;">Powered by EasyClaw</p>
     </footer>
 </body>
 </html>
