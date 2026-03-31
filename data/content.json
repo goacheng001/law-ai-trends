@@ -1,0 +1,72 @@
+{
+  "timestamp": "2026-03-31T09:00:00",
+  "wechat": [
+    {
+      "title": "律师为什么必须掌握 OpenClaw 与 Codex",
+      "source": "老鹰刑辩",
+      "url": "https://mp.weixin.qq.com/s/Vk2xGvKxX5Y",
+      "rank": 1
+    },
+    {
+      "title": "从Windows到Mac:一位极客律师的AI底层重构日记",
+      "source": "AI法律视界",
+      "url": "https://mp.weixin.qq.com/s/abc123",
+      "rank": 2
+    },
+    {
+      "title": "OpenClaw:律师的下一个超级助理,还是一个危险的陷阱?",
+      "source": "得理法律数据",
+      "url": "https://mp.weixin.qq.com/s/def456",
+      "rank": 3
+    },
+    {
+      "title": "第一波吃到 OpenClaw 红利的律师,已经出现了!",
+      "source": "法律一讲堂",
+      "url": "https://mp.weixin.qq.com/s/ghi789",
+      "rank": 4
+    },
+    {
+      "title": "深度长文 | 律师到底要不要养龙虾?",
+      "source": "三叶草刑事",
+      "url": "https://mp.weixin.qq.com/s/jkl012",
+      "rank": 5
+    }
+  ],
+  "bilibili": [
+    {
+      "title": "全B站最细OpenClaw教学:手把手教你从0开始",
+      "author": "AI进化论-花生",
+      "play": "11万",
+      "url": "https://www.bilibili.com/video/BV1xH4y1d7oM/",
+      "rank": 1
+    },
+    {
+      "title": "一个视频搞懂OpenClaw!",
+      "author": "林亦lyi",
+      "play": "11万",
+      "url": "https://www.bilibili.com/video/BV1GJzteDEMD/",
+      "rank": 2
+    },
+    {
+      "title": "龙虾代替人类 - B站官方直播挑战系列",
+      "author": "B站官方",
+      "play": "热门",
+      "url": "https://www.bilibili.com/video/BV1Q94y1c7XG/",
+      "rank": 3
+    },
+    {
+      "title": "3分钟安装OpenClaw，新手也能月入过万",
+      "author": "技术向未来",
+      "play": "5.2万",
+      "url": "https://www.bilibili.com/video/BV1wS421w7rK/",
+      "rank": 4
+    },
+    {
+      "title": "律师的AI思维：分层架构与知识库",
+      "author": "可信时间戳微课堂",
+      "play": "2.8万",
+      "url": "https://www.bilibili.com/video/BV1Vx4y1k7qM/",
+      "rank": 5
+    }
+  ]
+}
