@@ -115,6 +115,7 @@
         .tag-bilibili { background: rgba(0,161,214,0.1); color: var(--bilibili); }
         .tag-xiaohongshu { background: rgba(254,44,85,0.1); color: var(--xiaohongshu); }
         .tag-skill { background: rgba(184,92,56,0.1); color: var(--accent); }
+        .tag-codex { background: rgba(184,92,56,0.15); color: #8b4d32; }
 
         .article-title {
             font-family: 'Noto Serif SC', serif;
@@ -134,8 +135,6 @@
             font-size: 0.8rem;
             color: var(--text-secondary);
             line-height: 1.6;
-            max-height: 60px;
-            overflow: hidden;
         }
 
         .read-more {
@@ -166,6 +165,15 @@
             color: var(--text-muted);
             font-size: 0.85rem;
         }
+
+        .section-label {
+            font-size: 0.7rem;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
     </style>
 </head>
 <body>
@@ -181,66 +189,111 @@
     </nav>
 
     <div class="container">
-        <div class="update-info">更新时间：2026年3月31日</div>
+        <div class="update-info">更新时间：2026年3月31日 · 持续更新</div>
 
         <!-- 微信公众号 -->
         <div id="wechatContent" class="platform-content active">
+            
+            <div class="section-label">🔥 Skill创建教程</div>
+
             <div class="article-card">
-                <span class="article-tag tag-skill">Skill教程</span>
-                <h3 class="article-title">重磅！《法律龙虾🦞使用指南》（律师版）来了！</h3>
+                <span class="article-tag tag-skill">Skill创建</span>
+                <h3 class="article-title">OpenClaw Skill 开发完整指南:从零开始创建你的第一个技能</h3>
+                <div class="article-source">AtYouer</div>
+                <div class="article-desc">从零开始创建Skill的完整教程</div>
+                <a href="#" target="_blank" class="read-more">阅读全文 →</a>
+            </div>
+
+            <div class="article-card">
+                <span class="article-tag tag-skill">Skill创建</span>
+                <h3 class="article-title">OpenClaw 自建 Skills 实战指南:三步打造你的 AI 特工队</h3>
+                <div class="article-source">架构之美</div>
+                <div class="article-desc">三步打造AI特工队</div>
+                <a href="#" target="_blank" class="read-more">阅读全文 →</a>
+            </div>
+
+            <div class="article-card">
+                <span class="article-tag tag-skill">Skill创建</span>
+                <h3 class="article-title">OpenClaw Skills专栏|怎么建、怎么装、去哪找、哪些必装</h3>
+                <div class="article-source">老马的AI机器人充电站</div>
+                <div class="article-desc">怎么建、怎么装、去哪找、哪些必装</div>
+                <a href="#" target="_blank" class="read-more">阅读全文 →</a>
+            </div>
+
+            <div class="article-card">
+                <span class="article-tag tag-skill">Skill创建</span>
+                <h3 class="article-title">如何创建openclaw技能 - 非常酷的创建自己的Skill</h3>
+                <div class="article-source">小柒学习圈子</div>
+                <div class="article-desc">手把手教你创建自己的Skill</div>
+                <a href="#" target="_blank" class="read-more">阅读全文 →</a>
+            </div>
+
+            <div class="section-label" style="margin-top:20px;">🔥 Claude Code 教程</div>
+
+            <div class="article-card">
+                <span class="article-tag tag-codex">Claude Code</span>
+                <h3 class="article-title">律师如何安装 Claude Code:一份真正能上手的实用指南</h3>
+                <div class="article-source">Trialday升堂</div>
+                <div class="article-desc">律师为什么值得安装Claude Code</div>
+                <a href="#" target="_blank" class="read-more">阅读全文 →</a>
+            </div>
+
+            <div class="article-card">
+                <span class="article-tag tag-codex">Claude Code</span>
+                <h3 class="article-title">法律人的Claude Code教程(一):安装与配置</h3>
+                <div class="article-source">智律积成</div>
+                <div class="article-desc">教不会我吃民法典! 安装与配置</div>
+                <a href="#" target="_blank" class="read-more">阅读全文 →</a>
+            </div>
+
+            <div class="article-card">
+                <span class="article-tag tag-codex">Claude Code</span>
+                <h3 class="article-title">法律人的Claude Code教程(四):CLAUDE.md与上下文管理</h3>
+                <div class="article-source">智律积成</div>
+                <div class="article-desc">CLAUDE.md与上下文管理</div>
+                <a href="#" target="_blank" class="read-more">阅读全文 →</a>
+            </div>
+
+            <div class="article-card">
+                <span class="article-tag tag-codex">Claude Code</span>
+                <h3 class="article-title">不会编程的律师竟拿下了Claude Code Hackton的冠军</h3>
+                <div class="article-source">Oliver Liu</div>
+                <div class="article-desc">律师拿下Hackathon冠军！</div>
+                <a href="#" target="_blank" class="read-more">阅读全文 →</a>
+            </div>
+
+            <div class="article-card">
+                <span class="article-tag tag-codex">Claude Code</span>
+                <h3 class="article-title">全网最全Claude code安装教程,电脑小白也能装!</h3>
+                <div class="article-source">光遇旅人小屋</div>
+                <div class="article-desc">电脑小白也能装!</div>
+                <a href="#" target="_blank" class="read-more">阅读全文 →</a>
+            </div>
+
+            <div class="article-card">
+                <span class="article-tag tag-wechat">OpenClaw</span>
+                <h3 class="article-title">《法律龙虾🦞使用指南》（律师版）</h3>
                 <div class="article-source">法律实验室</div>
-                <div class="article-desc">3周"饲养龙虾"心得，从Coze一键部署到配置各种Skills</div>
+                <div class="article-desc">3周"饲养龙虾"心得</div>
                 <a href="https://mp.weixin.qq.com/s/2da1823AjUGlvZs_nig83g" target="_blank" class="read-more">阅读全文 →</a>
             </div>
 
             <div class="article-card">
-                <span class="article-tag tag-skill">Skill测评</span>
-                <h3 class="article-title">"李鬼"大战Anthropic官方Skill</h3>
-                <div class="article-source">元力兄弟</div>
-                <div class="article-desc">如何判断Skill是否"官方"：看GitHub组织名、认证标签</div>
-                <a href="https://mp.weixin.qq.com/s/DkP0YpOtEwp2cFRbjluQQw" target="_blank" class="read-more">阅读全文 →</a>
-            </div>
-
-            <div class="article-card">
-                <span class="article-tag tag-skill">Skill实操</span>
-                <h3 class="article-title">两个Skill协作搞定案例整理——法律知识库AI三次升级</h3>
+                <span class="article-tag tag-skill">Skill</span>
+                <h3 class="article-title">两个Skill协作搞定案例整理</h3>
                 <div class="article-source">法律实验室</div>
-                <div class="article-desc">从Coze→Dify→Claude Code→Skill的升级迭代</div>
+                <div class="article-desc">法律知识库AI三次升级</div>
                 <a href="https://mp.weixin.qq.com/s/V0aFlwzZmrJpj0Dkm6tKlg" target="_blank" class="read-more">阅读全文 →</a>
-            </div>
-
-            <div class="article-card">
-                <span class="article-tag tag-wechat">教程</span>
-                <h3 class="article-title">律师为什么必须掌握 OpenClaw 与 Codex</h3>
-                <div class="article-source">老鹰刑辩</div>
-                <div class="article-desc">法律人学编程：Codex入门指南</div>
-                <a href="https://mp.weixin.qq.com/s?src=11&timestamp=1774933644&ver=6631&signature=2dqIg-lBaKzScetNbzHv1OOYdtWcvh*d*Nvr2ETEqKbEI2qvQkpLq5gfqlXBGfpt58EPrEa*yzG6uZhMHXbJl-oVNaXwf9E9RjeNboHg2-To1YfFRwbIV7T0oPnlSTn1&new=1" target="_blank" class="read-more">阅读全文 →</a>
-            </div>
-
-            <div class="article-card">
-                <span class="article-tag tag-skill">技能</span>
-                <h3 class="article-title">搞定双公众号自动发送后，我更确定律师该学的是生成自己的skill</h3>
-                <div class="article-source">老鹰刑辩</div>
-                <div class="article-desc">律师如何创建自己的Skills实现自动化</div>
-                <a href="https://mp.weixin.qq.com/s?src=11&timestamp=1774930183&ver=6631&signature=EwAcUqBdcvFM2f64gECd4QVfcmEPXq5exx1f5pu41TTu2hGzFaY5Xq*l-kxBYktnUFgleGgd7N*dyoZsmEU4dvCNjCyqihmgpbbwMQpkkyYqqhKu9MbIMXxLRgNzItEo&new=1" target="_blank" class="read-more">阅读全文 →</a>
-            </div>
-
-            <div class="article-card">
-                <span class="article-tag tag-wechat">应用</span>
-                <h3 class="article-title">锦律说法 | OpenClaw的法律行业应用</h3>
-                <div class="article-source">锦天城厦门律师事务所</div>
-                <div class="article-desc">AI从辅助工具走向生产力落地的探索</div>
-                <a href="https://mp.weixin.qq.com/s?src=11&timestamp=1774930342&ver=6631&signature=*h67fgApwCux31qH8Ov0RQgRq9RX-2-rRU6yN3qwY-NNPHN1S7ExjfrviwQ0iap3kqYjeNq3nypIUVEv8MRq8p2uylWeAPcBDbyaETd7-*cZnnnf4sDjLY152ppcJXPV&new=1" target="_blank" class="read-more">阅读全文 →</a>
             </div>
         </div>
 
         <!-- B站视频 -->
         <div id="bilibiliContent" class="platform-content">
             <div class="article-card">
-                <span class="article-tag tag-bilibili">安装教程</span>
+                <span class="article-tag tag-bilibili">Skill教程</span>
                 <h3 class="article-title">OpenClaw全网最细保姆级教学:安装→Skills实战→多Agent协作</h3>
                 <div class="article-source">53:25</div>
-                <div class="article-desc">1小时全精通！从安装到实操，包含Skills实战</div>
+                <div class="article-desc">1小时全精通！从安装到Skills实战</div>
                 <a href="https://www.bilibili.com/search?keyword=OpenClaw%20Skills" target="_blank" class="read-more">搜索视频 →</a>
             </div>
 
@@ -253,27 +306,27 @@
             </div>
 
             <div class="article-card">
+                <span class="article-tag tag-bilibili">Codex教程</span>
+                <h3 class="article-title">Codex律师入门教程：法律人学编程</h3>
+                <div class="article-source">编程教学</div>
+                <div class="article-desc">律师学Codex入门</div>
+                <a href="https://www.bilibili.com/search?keyword=Codex%20%E5%BE%8B%E5%B8%88" target="_blank" class="read-more">搜索视频 →</a>
+            </div>
+
+            <div class="article-card">
+                <span class="article-tag tag-bilibili">Claude Code</span>
+                <h3 class="article-title">Claude Code 完整安装与使用教程</h3>
+                <div class="article-source">安装配置</div>
+                <div class="article-desc">从安装到精通</div>
+                <a href="https://www.bilibili.com/search?keyword=Claude%20Code%20%E5%AE%89%E8%A3%85" target="_blank" class="read-more">搜索视频 →</a>
+            </div>
+
+            <div class="article-card">
                 <span class="article-tag tag-bilibili">Windows</span>
                 <h3 class="article-title">全网最详细:手把手教你安装 OpenClaw 小龙虾(Windows全流程)</h3>
                 <div class="article-source">图文版</div>
-                <div class="article-desc">Windows安装比Mac坑多，这篇帮你一次成功</div>
+                <div class="article-desc">Windows安装比Mac坑多，一次成功</div>
                 <a href="https://www.bilibili.com/search?keyword=OpenClaw%20Windows" target="_blank" class="read-more">搜索视频 →</a>
-            </div>
-
-            <div class="article-card">
-                <span class="article-tag tag-bilibili">Skill教程</span>
-                <h3 class="article-title">Skill创建教程：法律人如何制作自己的Skill</h3>
-                <div class="article-source">技能开发</div>
-                <div class="article-desc">手把手教你创建专属Skills</div>
-                <a href="https://www.bilibili.com/search?keyword=Skill%20%E5%BE%8B%E5%B8%88%20%E5%AE%89%E8%A3%85" target="_blank" class="read-more">搜索视频 →</a>
-            </div>
-
-            <div class="article-card">
-                <span class="article-tag tag-bilibili">实操</span>
-                <h3 class="article-title">OpenClaw实操：律师日常用法演示</h3>
-                <div class="article-source">实战演示</div>
-                <div class="article-desc">律师日常使用场景演示</div>
-                <a href="https://www.bilibili.com/search?keyword=OpenClaw%20%E5%BE%8B%E5%B8%88%20%E5%AE%9E%E6%88%98" target="_blank" class="read-more">搜索视频 →</a>
             </div>
         </div>
 
@@ -287,7 +340,7 @@
     </div>
 
     <footer class="footer">
-        <p>法律人AI工具热门内容</p>
+        <p>法律人AI工具热门内容 · 教程 Skills 实战</p>
         <p style="margin-top:4px;opacity:0.6;">Powered by EasyClaw</p>
     </footer>
 
